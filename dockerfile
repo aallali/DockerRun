@@ -3,7 +3,7 @@ FROM ubuntu:16.04
 RUN apt-get update
 RUN apt-get install -y curl openssh-server ca-certificates git tzdata
 
-EXPOSE 443 80 22
+EXPOSE 443 80 2222
 
 RUN curl https://packages.gitlab.com/install/repositories/gitlab/gitlab-ce/script.deb.sh | bash
 RUN apt-get -y install gitlab-ce
